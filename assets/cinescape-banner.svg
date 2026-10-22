@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" role="img" aria-labelledby="title desc">
+  <title id="title">CINESCAPE — Entertainment, in motion</title>
+  <desc id="desc">A cinematic midnight-blue banner with glowing amber and cyan orbits, subtle stars, and the CINESCAPE wordmark.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#070b15"/>
+      <stop offset=".55" stop-color="#111a30"/>
+      <stop offset="1" stop-color="#071019"/>
+    </linearGradient>
+    <radialGradient id="glowA"><stop offset="0" stop-color="#ffb969" stop-opacity=".48"/><stop offset="1" stop-color="#ffb969" stop-opacity="0"/></radialGradient>
+    <radialGradient id="glowC"><stop offset="0" stop-color="#68dff5" stop-opacity=".3"/><stop offset="1" stop-color="#68dff5" stop-opacity="0"/></radialGradient>
+    <linearGradient id="word" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#fff5e4"/><stop offset="1" stop-color="#d6e9ff"/></linearGradient>
+    <linearGradient id="line" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#ffc17b" stop-opacity="0"/><stop offset=".5" stop-color="#ffc17b" stop-opacity=".9"/><stop offset="1" stop-color="#68dff5" stop-opacity="0"/></linearGradient>
+    <filter id="blur"><feGaussianBlur stdDeviation="30"/></filter>
+    <filter id="shadow"><feGaussianBlur stdDeviation="7"/></filter>
+    <clipPath id="clip"><rect width="1200" height="360" rx="24"/></clipPath>
+  </defs>
+  <g clip-path="url(#clip)">
+    <rect width="1200" height="360" fill="url(#bg)"/>
+    <ellipse cx="940" cy="110" rx="310" ry="230" fill="url(#glowC)" filter="url(#blur)"/>
+    <ellipse cx="1000" cy="300" rx="290" ry="200" fill="url(#glowA)" filter="url(#blur)"/>
+    <g fill="#edf7ff" opacity=".55">
+      <circle cx="725" cy="48" r="1.4"/><circle cx="840" cy="285" r="1.2"/><circle cx="1100" cy="58" r="1.6"/><circle cx="1150" cy="194" r="1.1"/><circle cx="655" cy="220" r="1.2"/><circle cx="1010" cy="24" r="1"/><circle cx="780" cy="144" r="1.5"/><circle cx="1095" cy="320" r="1.2"/><circle cx="930" cy="245" r="1.1"/><circle cx="680" cy="82" r="1"/>
+    </g>
+    <g transform="translate(956 174)">
+      <circle r="124" fill="none" stroke="#91ddeb" stroke-opacity=".14" stroke-width="1.4"/>
+      <circle r="93" fill="none" stroke="#f8c38b" stroke-opacity=".23" stroke-width="1.2" stroke-dasharray="3 12"/>
+      <ellipse rx="172" ry="55" transform="rotate(-24)" fill="none" stroke="url(#line)" stroke-width="1.5"/>
+      <circle cx="-89" cy="-65" r="6" fill="#ffc17b"/>
+      <circle cx="-89" cy="-65" r="18" fill="#ffc17b" opacity=".23" filter="url(#shadow)"/>
+      <circle cx="109" cy="30" r="4" fill="#68dff5"/>
+      <circle cx="109" cy="30" r="15" fill="#68dff5" opacity=".25" filter="url(#shadow)"/>
+      <path d="M-25-38 C-48-66 -28-93 -6-111 C-3-83 18-75 19-51 C37-73 43-88 39-104 C74-69 85-39 70-10 C59 13 38 25 13 24 C-16 23-40 5-42-18 C-44-27-37-35-25-38Z" fill="#ff9d51" opacity=".15"/>
+      <path d="M-16 22 C-27 5-20-10-7-23 C-7-7 4-3 6 8 C17-4 19-13 18-20 C35-3 39 12 29 25 C17 39-5 39-16 22Z" fill="#ffc17b" opacity=".75"/>
+      <path d="M25 33 C11 19 15 4 29-9 C31 4 40 5 42 15 C48 8 49 3 48-4 C65 13 65 29 52 39 C44 46 32 43 25 33Z" fill="#68dff5" opacity=".84"/>
+    </g>
+    <path d="M64 255 H625" stroke="url(#line)" stroke-width="1.2"/>
+    <g transform="translate(70 98)">
+      <rect width="48" height="48" rx="15" fill="#ffffff" fill-opacity=".055" stroke="#ffffff" stroke-opacity=".18"/>
+      <path d="M11 35 L11 22 Q11 17 16 13 L20 9 L21 22 L28 15 L28 35Z" fill="#ffbf75"/>
+      <path d="M24 35 L24 26 L31 18 L35 27 L35 35Z" fill="#68dff5"/>
+    </g>
+    <text x="70" y="202" fill="url(#word)" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="72" font-weight="800" letter-spacing="-3">CINE<tspan fill="#ffc17b">SCAPE</tspan></text>
+    <text x="75" y="237" fill="#c5d1e4" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="18" letter-spacing="4">ENTERTAINMENT, IN MOTION</text>
+    <text x="75" y="302" fill="#93a3bc" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="13" letter-spacing="1.8">A CINEMATIC · REMOTE-FIRST DISCOVERY EXPERIENCE</text>
+  </g>
+</svg>
