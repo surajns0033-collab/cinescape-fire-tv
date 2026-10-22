@@ -1,0 +1,12 @@
+{
+  "name": "cinescape",
+  "version": "1.0.0",
+  "private": true,
+  "description": "CINESCAPE — cinematic TV entertainment discovery",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
