@@ -1,49 +1,35 @@
 # CINESCAPE
 
-CINESCAPE is an original, TV-first entertainment discovery prototype designed for remote navigation. It is not a game and does not stream licensed movies or series.
+CINESCAPE is an original, TV-first entertainment discovery interface designed for remote navigation. It is a browsing prototype, not a game and not a commercial streaming service.
 
 ## Features
 
-- 30 fictional entertainment titles across movies, series, action, sci-fi, comedy, mystery, family, nature, and documentaries.
-- Large hero presentation and horizontally scrolling content shelves.
-- Show-specific animated backgrounds that transition with the focused title.
-- Signature fire → water extinguish → fire ignition focus effect.
-- D-pad/keyboard navigation, show details, categories, search, and My List.
-- Original SVG poster and backdrop artwork generated locally from the included script.
+- A cinematic home screen with a featured title and entertainment shelves.
+- 30 fictional sample titles spanning movies, series, sci-fi, action, fantasy, comedy, mystery, family, nature and documentaries.
+- Show-specific background palettes and subtle animated atmosphere.
+- Signature fire → water extinguish → fire ignition focus effect as remote focus moves between titles.
+- Keyboard/D-pad navigation, show details, search, category filters and My List.
+- Self-contained HTML/CSS/JavaScript with no external runtime assets or npm dependencies.
 
 ## Run locally
 
-Requirements: Node.js 18+ and Python 3 (standard library only).
+Requires Node.js 18+.
 
 ```bash
 npm start
 ```
 
-Open http://localhost:4173. On startup, the project generates its original SVG artwork if it is missing.
-
-To validate:
-
-```bash
-npm run check
-```
+Open http://localhost:4173. To run the project server without npm, use `node server.js`.
 
 ## Controls
 
 - Arrow keys / remote D-pad: navigate.
 - Enter / Select: activate or open a title.
 - Escape / Backspace: return or close the current screen.
-- M: toggle reduced motion in the web preview.
+- M: toggle reduced motion in the browser preview.
 
-## Platform status
+## Target-platform status
 
-This repository contains a runnable browser MVP and a Vega WebView wrapper starter. It is not yet a signed or installable Fire TV package. A browser preview does not establish Fire OS or Vega OS device compatibility. See `docs/FIRE_TV_PORTING.md` for the target-platform steps.
+This repository currently contains a browser prototype. It is not yet a signed or installable Fire TV package, and no official Fire TV/Vega simulator or physical-device test is claimed. See [Fire TV porting notes](docs/FIRE_TV_PORTING.md).
 
-## Structure
-
-- `index.html`, `styles.css`, `app.js`: UI and interactions.
-- `server.js`: dependency-free static server.
-- `scripts/generate_artwork.py`: generates the original poster/backdrop SVG files.
-- `vega-wrapper/App.tsx`: wrapper starter.
-- `docs/`: planning, testing, demo, and submission notes.
-
-All sample shows are fictional. The preview UI does not play commercial media.
+The demo-preview action is a concept screen. It does not play commercial media.
