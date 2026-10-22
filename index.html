@@ -57,6 +57,42 @@ h1{font-size:clamp(40px,5vw,72px);line-height:.98;letter-spacing:-.055em;margin:
 @media(min-width:1500px){.app{padding-top:34px}.hero{min-height:390px}.synopsis{font-size:15px}.card{flex-basis:184px}.poster{height:190px}}
 @media(max-width:1000px){.app{grid-template-columns:66px minmax(0,1fr);gap:18px;padding:20px 3vw}.hero{min-height:310px}.hero-art{right:-6%;width:52%;opacity:.6}.top-right .keys{display:none}.card{flex-basis:145px}.poster{height:150px}}
 @media(max-width:650px){.app{grid-template-columns:1fr;padding:14px 15px 22px;gap:10px}.rail{position:sticky;top:0;display:flex;flex-direction:row;justify-content:flex-start;background:#080d19e8;backdrop-filter:blur(15px);padding:6px 0;gap:9px}.brand{flex:0 0 42px;width:42px;height:42px}.rail-rule,.rail-foot{display:none}.nav{flex-direction:row;gap:3px;overflow:auto}.nav button{min-width:54px;min-height:46px;font-size:9px}.nav svg{width:17px;height:17px}.nav button.current:before{left:15px;right:15px;top:auto;bottom:0;height:2px;width:auto}.topbar{height:33px;font-size:8px;letter-spacing:.1em}.top-right{display:none}.hero{min-height:335px;padding:30px 0;align-items:flex-end}.hero-copy{width:100%}.hero-art{top:0;right:-18%;height:72%;width:86%;opacity:.62}.hero-art:before{width:250px}.hero-art:after{right:28%;font-size:100px}.hero-copy{padding-top:65px}h1{font-size:43px}.synopsis{font-size:12px;max-width:420px}.browse-tools{flex-wrap:wrap}.searchbox{min-width:100%;order:3}.section-note{margin-left:0}.card{flex-basis:126px}.poster{height:133px}.detail-grid{grid-template-columns:1fr}.detail-art{display:none}.modal{padding:24px}.footer{font-size:8px;letter-spacing:.07em}.footer span:last-child{display:none}}
+/* TV-focused pass: preserve a 5% safe zone and make essential UI readable at distance. */
+@media(min-width:651px){
+  .app{padding:5vh 5vw 5vh}
+  .topbar{font-size:clamp(11px,.95vw,16px);letter-spacing:.1em;height:auto;min-height:42px}
+  .nav button{font-size:clamp(12px,1.1vw,15px);min-height:clamp(60px,7vh,78px);gap:8px}
+  .nav svg{width:24px;height:24px}
+  .kicker{font-size:clamp(12px,.9vw,16px)}
+  .pill{font-size:clamp(11px,.8vw,14px);padding:6px 9px}
+  h1{font-size:clamp(42px,5vw,84px)}
+  .meta{font-size:clamp(14px,1vw,19px)}
+  .rating{font-size:clamp(12px,.8vw,15px);padding:3px 7px}
+  .synopsis{font-size:clamp(16px,1.35vw,24px);line-height:1.65;max-width:620px}
+  .btn{font-size:clamp(14px,1vw,18px);min-height:52px;padding:0 19px}
+  .hero-foot{font-size:clamp(11px,.75vw,14px)}
+  .section-title{font-size:clamp(18px,1.4vw,26px)}
+  .section-note{font-size:clamp(11px,.9vw,15px)}
+  .searchbox{height:48px;min-width:280px}
+  .searchbox input{font-size:clamp(14px,1vw,18px)}
+  .chip{font-size:clamp(13px,1vw,17px);padding:10px 16px}
+  .shelf-head h2{font-size:clamp(17px,1.25vw,23px)}
+  .shelf-head span{font-size:clamp(11px,.8vw,15px)}
+  .card{flex-basis:clamp(150px,15vw,220px);border-radius:14px}
+  .poster{height:clamp(170px,17vw,250px)}
+  .poster-label{font-size:clamp(10px,.8vw,14px)}
+  .card-title{font-size:clamp(14px,1vw,18px);padding:12px 12px 3px}
+  .card-sub{font-size:clamp(12px,.82vw,15px);padding:0 12px 13px}
+  .list-mark{width:32px;height:32px;font-size:19px}
+  .footer{font-size:clamp(10px,.72vw,13px)}
+  .detail-kicker{font-size:clamp(11px,.75vw,14px)}
+  .detail-title{font-size:clamp(34px,4.4vw,64px)}
+  .detail-desc{font-size:clamp(16px,1.2vw,22px);line-height:1.7}
+  .close{font-size:28px;width:44px;height:44px}
+  .empty{font-size:16px}
+  .toast{font-size:14px}
+  .hero{min-height:clamp(320px,38vh,450px)}
+}
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
 </style>
 </head>
@@ -81,7 +117,7 @@ h1{font-size:clamp(40px,5vw,72px);line-height:.98;letter-spacing:-.055em;margin:
 <div class="hero-copy"><div class="kicker"><span id="kicker">CINESCAPE ORIGINAL</span><span class="pill" id="kind">SERIES</span></div><h1 id="hero-title">Orbit of <em>Ashes</em></h1><div class="meta" id="hero-meta"><span>2026</span><span class="dot"></span><span>Sci-Fi</span><span class="dot"></span><span>1 Season</span><span class="rating">13+</span></div><p class="synopsis" id="hero-desc">A signal from a forgotten moon pulls a salvage crew toward the edge of a buried truth.</p><div class="actions"><button class="btn primary focusable" data-action="preview"><svg viewBox="0 0 24 24"><path d="m8 5 12 7-12 7Z"/></svg>Watch Preview</button><button class="btn focusable" data-action="details"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/></svg>More Info</button></div><div class="hero-foot"><span class="wave"><i></i><i></i><i></i><i></i></span><span>CURATED FOR YOU</span><span>·</span><span id="spotlight">A CINESCAPE SPOTLIGHT</span></div></div>
 <div class="hero-art" aria-hidden="true"></div>
 </section>
-<div class="browse-tools"><span class="section-title" id="section-title">Discover something extraordinary</span><span class="section-note" id="section-note">30 STORIES · MADE FOR THE BIG SCREEN</span><label class="searchbox" id="searchbox" hidden><svg viewBox="0 0 24 24"><circle cx="10.8" cy="10.8" r="6.8" stroke-width="1.7"/><path d="m16 16 5 5" stroke-width="1.7"/></svg><input id="search" type="search" placeholder="Search titles or genres…" aria-label="Search entertainment"></label></div>
+<div class="browse-tools"><span class="section-title" id="section-title">Discover something extraordinary</span><span class="section-note" id="section-note">30 STORIES · MADE FOR THE BIG SCREEN</span><label class="searchbox" id="searchbox" hidden><svg viewBox="0 0 24 24"><circle cx="10.8" cy="10.8" r="6.8" stroke-width="1.7"/><path d="m16 16 5 5" stroke-width="1.7"/></svg><input id="search" class="focusable" type="search" placeholder="Search titles or genres…" aria-label="Search entertainment"></label></div>
 <div class="chips" id="chips" hidden></div>
 <div id="rows"></div>
 <footer class="footer"><span>AN ORIGINAL ENTERTAINMENT DISCOVERY CONCEPT</span><span>DESIGNED FOR THE BIG SCREEN <b>✦</b></span></footer>
@@ -146,7 +182,7 @@ function switchView(next){view=next;query='';category='All';$('#search').value='
 function toast(msg){const el=$('#toast');el.textContent=msg;el.classList.add('show');clearTimeout(toastTimer);toastTimer=setTimeout(function(){el.classList.remove('show');},1900);}
 document.addEventListener('click',function(e){const b=e.target.closest('[data-action]');if(!b)return;const action=b.dataset.action;if(action==='view'){switchView(b.dataset.view);return;}if(action==='category'){category=b.dataset.category;render();const selected=$('.chip.selected');if(selected)selected.focus();return;}if(action==='details'){openModal(shows.find(function(s){return s.id===b.dataset.showId;})||active,false);return;}if(action==='preview'){openModal(shows.find(function(s){return s.id===b.dataset.showId;})||active,true);return;}if(action==='close'){closeModal();return;}if(action==='toggle-list'){const id=b.dataset.showId||active.id;if(saved.has(id)){saved.delete(id);toast('Removed from My List');}else{saved.add(id);toast('Added to My List');}try{localStorage.setItem('cinescape-list',JSON.stringify(Array.from(saved)));}catch(err){}const s=shows.find(function(x){return x.id===id;});openModal(s,false);return;}});
 $('#search').addEventListener('input',function(){query=this.value;render();const input=$('#search');input.focus();});
-document.addEventListener('keydown',function(e){if($('#modal').hidden===false){if(e.key==='Escape'||e.key==='Backspace'){e.preventDefault();closeModal();return;}if(e.key==='ArrowRight'||e.key==='ArrowLeft'||e.key==='ArrowDown'||e.key==='ArrowUp'){const items=$('.focusable',$('#modal-content')).filter(function(x){return x.offsetParent!==null;});const i=items.indexOf(document.activeElement);if(i>=0&&items.length){e.preventDefault();items[(i+(e.key==='ArrowRight'||e.key==='ArrowDown'?1:-1)+items.length)%items.length].focus();}}return;}if(e.key==='Escape'||e.key==='Backspace'||e.key==='GoBack'){e.preventDefault();if(view!=='home')switchView('home');else toast('You are at CINESCAPE Home');return;}if(e.key==='m'||e.key==='M'){document.body.classList.toggle('reduce-motion');toast(document.body.classList.contains('reduce-motion')?'Reduced motion enabled':'Motion effects enabled');return;}const dir={ArrowLeft:[-1,0],ArrowRight:[1,0],ArrowUp:[0,-1],ArrowDown:[0,1]}[e.key];if(!dir)return;if(document.activeElement&&document.activeElement.matches('input')){if(e.key==='ArrowLeft'||e.key==='ArrowRight')return;}const current=document.activeElement;if(!current||!current.matches('.focusable'))return;const all=$$('.focusable').filter(function(x){return x.offsetParent!==null&&!x.closest('.modal-wrap[hidden]');});const a=current.getBoundingClientRect(),cx=a.left+a.width/2,cy=a.top+a.height/2;let best=null,score=Infinity;all.forEach(function(el){if(el===current)return;const r=el.getBoundingClientRect(),dx=r.left+r.width/2-cx,dy=r.top+r.height/2-cy;if(dir[0]&&dx*dir[0]<=5)return;if(dir[1]&&dy*dir[1]<=5)return;const primary=dir[0]?Math.abs(dx):Math.abs(dy),secondary=dir[0]?Math.abs(dy):Math.abs(dx);const sc=primary+secondary*1.8;if(sc<score){score=sc;best=el;}});if(best){e.preventDefault();best.focus();}});
+document.addEventListener('keydown',function(e){if($('#modal').hidden===false){if(e.key==='Escape'||e.key==='Backspace'){e.preventDefault();closeModal();return;}if(e.key==='ArrowRight'||e.key==='ArrowLeft'||e.key==='ArrowDown'||e.key==='ArrowUp'){const dir={ArrowLeft:[-1,0],ArrowRight:[1,0],ArrowUp:[0,-1],ArrowDown:[0,1]}[e.key];const items=$('.focusable',$('#modal-content')).filter(function(x){return x.getClientRects().length>0;});const current=document.activeElement;const a=current.getBoundingClientRect(),cx=a.left+a.width/2,cy=a.top+a.height/2;let best=null,score=Infinity;items.forEach(function(el){if(el===current)return;const r=el.getBoundingClientRect(),dx=r.left+r.width/2-cx,dy=r.top+r.height/2-cy;if(dir[0]&&dx*dir[0]<=5)return;if(dir[1]&&dy*dir[1]<=5)return;const primary=dir[0]?Math.abs(dx):Math.abs(dy),secondary=dir[0]?Math.abs(dy):Math.abs(dx);const sc=primary+secondary*1.8;if(sc<score){score=sc;best=el;}});e.preventDefault();if(best)best.focus();}return;}if(e.key==='Escape'||e.key==='Backspace'||e.key==='GoBack'){e.preventDefault();if(view!=='home')switchView('home');else toast('You are at CINESCAPE Home');return;}if(e.key==='m'||e.key==='M'){document.body.classList.toggle('reduce-motion');toast(document.body.classList.contains('reduce-motion')?'Reduced motion enabled':'Motion effects enabled');return;}const dir={ArrowLeft:[-1,0],ArrowRight:[1,0],ArrowUp:[0,-1],ArrowDown:[0,1]}[e.key];if(!dir)return;if(document.activeElement&&document.activeElement.matches('input')){if(e.key==='ArrowLeft'||e.key==='ArrowRight')return;}const current=document.activeElement;if(!current||!current.matches('.focusable'))return;const all=$$('.focusable').filter(function(x){return x.offsetParent!==null&&!x.closest('.modal-wrap[hidden]');});const a=current.getBoundingClientRect(),cx=a.left+a.width/2,cy=a.top+a.height/2;let best=null,score=Infinity;all.forEach(function(el){if(el===current)return;const r=el.getBoundingClientRect(),dx=r.left+r.width/2-cx,dy=r.top+r.height/2-cy;if(dir[0]&&dx*dir[0]<=5)return;if(dir[1]&&dy*dir[1]<=5)return;const primary=dir[0]?Math.abs(dx):Math.abs(dy),secondary=dir[0]?Math.abs(dy):Math.abs(dx);const sc=primary+secondary*1.8;if(sc<score){score=sc;best=el;}});if(best){e.preventDefault();best.focus();}});
 document.addEventListener('click',function(e){const card=e.target.closest('.card');if(card&&card.dataset.showId){const s=shows.find(function(x){return x.id===card.dataset.showId;});if(s)theme(s);}});
 theme(active);render();setTimeout(function(){const b=$('.navbtn.current');if(b)b.focus();},80);
 })();
