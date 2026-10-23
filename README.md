@@ -36,7 +36,10 @@
 | **Genre-aware atmosphere** | Adapts ambient colors and motion to the currently focused show's visual theme. |
 | **Fire → Water → Fire focus effect** | A brief water ripple extinguishes the previous focus flame; the newly focused card receives a restrained ignition glow. |
 | **Remote-first navigation** | Supports directional navigation, Select/Enter, and Back/Escape behavior in the browser prototype. |
-| **Entertainment discovery** | Includes 30 fictional sample titles across movies, series, sci-fi, action, fantasy, comedy, mystery, family, nature, and documentaries. |
+| **Entertainment discovery** | Original (non-licensed) catalogue across movies, series, cartoons, studies, family, and more. |
+| **For You** | On-device picks from the title in focus — Fire TV “AI-enhanced viewing” without a cloud model. |
+| **Guest Settings** | Connectivity demo plus theme, flame colour, language (EN/HI), captions, restore/reset. |
+| **Demo player chrome** | Skip intro and captions, matching Vega video-sample patterns. No commercial stream. |
 | **Details and discovery tools** | Opens title details and includes search, category browsing, and a local My List. |
 | **Reduced motion** | Provides a simple reduced-motion toggle in the prototype and respects the browser's reduced-motion preference. |
 
@@ -112,18 +115,30 @@ CINESCAPE deliberately keeps the initial prototype small and easy to run.
 ```text
 .
 ├── assets/
-│   └── cinescape-banner.svg
+│   ├── cinescape-banner.svg
+│   └── posters/
 ├── docs/
 │   ├── DEMO_SCRIPT.md
 │   ├── FIRE_TV_PORTING.md
+│   ├── FRICTION_LOG.md
 │   ├── IMPLEMENTATION_PLAN.md
+│   ├── SUBMISSION.md
 │   └── TESTING.md
 ├── .gitignore
 ├── index.html
+├── LICENSE
 ├── package.json
 ├── README.md
 └── server.js
 ```
+
+## Hackathon resources
+
+Built against [Amazon AppDev 2026 Resources](https://amazonappdev2026.devpost.com/resources) (Fire TV web path). Official starters we mapped to: drawer nav + grid + hero (`react-native-multi-tv-app-sample`), focus / i18n / scrolling (`vega-tv-interfaces-sample`), player chrome (`vega-video-sample`).
+
+Paste-ready Devpost text, product feedback, and feature requests: [`docs/SUBMISSION.md`](docs/SUBMISSION.md). Optional judging bonus log: [`docs/FRICTION_LOG.md`](docs/FRICTION_LOG.md). License: [MIT](LICENSE).
+
+This machine still cannot produce a Fire OS APK or Vega VPKG (no Android / Vega SDK). The required demo video must be recorded on a Fire TV device or official simulator — see [`docs/FIRE_TV_PORTING.md`](docs/FIRE_TV_PORTING.md).
 
 ## 🔐 Data and content
 

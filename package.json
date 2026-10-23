@@ -2,7 +2,12 @@
   "name": "cinescape",
   "version": "1.0.0",
   "private": true,
+  "license": "MIT",
   "description": "CINESCAPE — cinematic TV entertainment discovery",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/surajns0033-collab/cinescape-fire-tv.git"
+  },
   "scripts": {
     "start": "node server.js"
   },
