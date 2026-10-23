@@ -1,5 +1,9 @@
 # CINESCAPE
 
+<p align="center">
+  <img src="assets/cinescape-banner.svg" alt="CINESCAPE — Entertainment, in motion" width="100%">
+</p>
+
 Remote-first entertainment discovery for a 10-foot screen. Original (non-licensed) catalogue, D-pad spatial navigation, and a living-room UI you can run in a browser.
 
 ```bash
@@ -11,7 +15,11 @@ npm start
 Arrow keys move focus. Enter opens a title. Escape goes back. This is a **Fire TV web prototype**, not a signed Fire OS APK or Vega package, and it does **not** stream commercial movies.
 
 <p align="center">
-  <img src="assets/screenshots/home.png" alt="CINESCAPE Home — hero, For You, and genre shelves" width="920">
+  <img src="assets/screenshots/home.png" alt="Home — Orbit of Ashes hero and For You sci-fi row" width="920">
+</p>
+<p align="center">
+  <img src="assets/screenshots/preview.png" alt="Demo player — Skip intro and captions, no licensed stream" width="450">
+  <img src="assets/screenshots/settings.png" alt="Guest Settings — theme, flame colour, English and Hindi" width="450">
 </p>
 
 ---
