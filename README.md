@@ -4,6 +4,27 @@
   <img src="assets/cinescape-banner.svg" alt="CINESCAPE — Entertainment, in motion" width="100%">
 </p>
 
+<p align="center">
+  <a href="#architecture"><img alt="HTML" src="https://img.shields.io/badge/HTML-E34F26?style=flat-square&logo=html5&logoColor=white"></a>
+  <a href="#architecture"><img alt="CSS" src="https://img.shields.io/badge/CSS-1572B6?style=flat-square&logo=css&logoColor=white"></a>
+  <a href="#architecture"><img alt="JavaScript" src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=111"></a>
+  <a href="#quick-start"><img alt="Node.js" src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white"></a>
+  <a href="#what-this-is-not"><img alt="Amazon Fire TV" src="https://img.shields.io/badge/Amazon_Fire_TV-FF9900?style=flat-square&logo=amazon&logoColor=white"></a>
+  <a href="#quick-start"><img alt="Amazon Bedrock" src="https://img.shields.io/badge/Amazon_Bedrock-232F3E?style=flat-square&logo=amazonaws&logoColor=white"></a>
+  <img alt="License MIT" src="https://img.shields.io/badge/License-MIT-0B3D2E?style=flat-square">
+</p>
+
+<p align="center">
+  <code>html</code>
+  <code>css</code>
+  <code>javascript</code>
+  <code>nodejs</code>
+  <code>amazon-fire-tv</code>
+  <code>amazon-bedrock</code>
+  <code>10-foot-ui</code>
+  <code>mit</code>
+</p>
+
 Remote-first entertainment discovery for a 10-foot screen. Original (non-licensed) catalogue, D-pad spatial navigation, and a living-room UI you can run in a browser.
 
 ```bash
