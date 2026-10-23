@@ -7,12 +7,11 @@
 <p align="center">
   <img alt="License: MIT" src="https://img.shields.io/badge/license-MIT-111A30?style=flat&labelColor=0B1220&color=C8A46B">
   <img alt="Node.js 18+" src="https://img.shields.io/badge/node-%3E%3D18-111A30?style=flat&labelColor=0B1220&color=7EB8C9">
-  <img alt="Fire TV web prototype" src="https://img.shields.io/badge/platform-Fire%20TV%20web-111A30?style=flat&labelColor=0B1220&color=C8A46B">
-  <img alt="Amazon Bedrock optional" src="https://img.shields.io/badge/Bedrock-optional-111A30?style=flat&labelColor=0B1220&color=7EB8C9">
+  <img alt="Fire TV web" src="https://img.shields.io/badge/platform-Fire%20TV%20web-111A30?style=flat&labelColor=0B1220&color=C8A46B">
 </p>
 
 <p align="center">
-  <sub>HTML · CSS · JavaScript · Node.js · Amazon Fire TV · Amazon Bedrock</sub>
+  <sub>HTML · CSS · JavaScript · Node.js · Amazon Fire TV</sub>
 </p>
 
 Remote-first entertainment discovery for a 10-foot screen. Original (non-licensed) catalogue, D-pad spatial navigation, and a living-room UI you can run in a browser.
@@ -75,7 +74,7 @@ Open [http://localhost:4173](http://localhost:4173). On a Fire TV Silk browser o
 | Escape / Backspace | Close or return Home |
 | M | Toggle reduced motion |
 
-Optional Bedrock (not required to demo):
+AWS keys for For You ranking:
 
 ```bash
 cp .env.example .env
@@ -92,7 +91,7 @@ One HTML document plus a small Node server. No React Native, no Vega SDK, no dat
 ```text
 index.html      # UI, catalogue, spatial focus, settings, preview chrome
 server.js       # static files, GET /api/status, POST /api/foryou
-package.json    # npm start, optional @aws-sdk/client-bedrock-runtime
+package.json    # npm start, @aws-sdk/client-bedrock-runtime
 .env.example    # AWS env names only
 assets/         # banner, original posters, screenshots
 docs/           # porting, testing, submission notes
@@ -106,7 +105,7 @@ LICENSE         # MIT
 - Not an installable Fire OS / Vega binary (no Android or Vega SDK in this tree).
 - Not a claim that the demo was recorded on a physical Stick unless you recapture it.
 - Not licensed IP. Catalogue titles and posters are original fiction.
-- Not a paid VideoMule / cloud CMS. Ranking is optional Bedrock or local mood match.
+- Not a paid VideoMule / cloud CMS. For You ranks on-device unless AWS keys are set.
 
 Packaging path: [`docs/FIRE_TV_PORTING.md`](docs/FIRE_TV_PORTING.md). Device checklist: [`docs/TESTING.md`](docs/TESTING.md).
 
