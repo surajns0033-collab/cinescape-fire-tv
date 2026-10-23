@@ -5,9 +5,10 @@
 </p>
 
 <p align="center">
-  <img alt="License: MIT" src="https://img.shields.io/badge/license-MIT-111A30?style=flat&labelColor=0B1220&color=C8A46B">
-  <img alt="Node.js 18+" src="https://img.shields.io/badge/node-%3E%3D18-111A30?style=flat&labelColor=0B1220&color=7EB8C9">
-  <img alt="Fire TV" src="https://img.shields.io/badge/platform-Fire%20TV-111A30?style=flat&labelColor=0B1220&color=C8A46B">
+  <img src="https://img.shields.io/badge/Project-Prototype-f0ad6d?style=for-the-badge" alt="Project status: prototype">
+  <img src="https://img.shields.io/badge/Experience-TV--First-101827?style=for-the-badge" alt="TV-first experience">
+  <img src="https://img.shields.io/badge/Runtime-Node.js%2018%2B-43853d?style=for-the-badge&logo=nodedotjs&logoColor=white" alt="Node.js 18 or newer">
+  <img src="https://img.shields.io/badge/Dependencies-None-527da8?style=for-the-badge" alt="No runtime dependencies">
 </p>
 
 <p align="center">
