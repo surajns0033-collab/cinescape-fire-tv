@@ -3,6 +3,10 @@ dist/
 build/
 .env
 .env.*
+!.env.example
 .DS_Store
 Thumbs.db
 *.log
+docs/demo/
+assets/screenshots/*.b64*
+assets/screenshots/*.txt

@@ -32,12 +32,12 @@ Each entry: task, steps, expected vs actual, severity, workaround, suggestion.
 **Workaround:** Flame only while `.focused`; clear other nav ignite classes on view change.  
 **Suggestion:** TV sample CSS for focus effects should document `forwards` pitfalls.
 
-## 4. AWS credits
+## 4. AWS credits vs Bedrock enablement
 
-**Task:** Consider AWS Builder mini-challenge (Bedrock / AgentCore).  
-**Steps:** Resources page, 7 Oct update.  
-**Expected:** Optional credits for an AI viewing feature.  
-**Actual:** “Out of credit codes and no longer accepting credit requests.”  
-**Severity:** Low for Fire TV web path; High if we had wanted Bedrock.  
-**Workaround:** On-device For You shelf, no AWS runtime.  
-**Suggestion:** Mark AWS Builder as “bring your own account” on Resources so teams do not plan around exhausted codes.
+**Task:** Use AWS Builder (Amazon Bedrock) for For You after promotional codes were marked exhausted on Resources (7 Oct).  
+**Steps:** Wired `POST /api/foryou` with `@aws-sdk/client-bedrock-runtime` `ConverseCommand`; documented `.env.example`; kept on-device fallback.  
+**Expected:** Credits plus a one-click model enable path.  
+**Actual:** Credits arrived on our account later; Resources still said codes were exhausted. Bedrock still requires the model (`amazon.nova-lite-v1:0`) enabled in-region. Without keys the UI stays identical.  
+**Severity:** Medium — eligibility is in code, live `source: bedrock` needs a local `.env`.  
+**Workaround:** Fallback ids from genre/theme; never return HTTP 500 for For You.  
+**Suggestion:** Resources should say “bring your own AWS account” and link model-access, not only the exhausted credit form.

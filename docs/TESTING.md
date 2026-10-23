@@ -16,9 +16,9 @@ Run `npm start` and open `http://localhost:4173`. Record each outcome before mar
 
 | Check | Result |
 | --- | --- |
-| Initial home view, featured title and shelves render | Pending manual run |
-| Arrow keys move focus across navigation and cards | Pending manual run |
-| Previous card water effect and new card ignition effect trigger on focus change | Pending manual run |
+| Initial home view, featured title and shelves render | Passed in Chrome at http://localhost:4173 (23 Oct 2026) |
+| Arrow keys move focus across navigation and cards | Passed in Chrome (keyboard) |
+| Previous card water effect and new card ignition effect trigger on focus change | Passed in Chrome |
 | Focus can enter and leave Search; search filters titles | Pending manual run |
 | Genre chips can be selected with directional keys | Pending manual run |
 | Details open; modal arrows reach visible controls; Back/Escape closes it | Pending manual run |
@@ -34,5 +34,5 @@ No signed package, official simulator run, or physical Fire TV/Vega device run i
 
 | Date | Environment / version | Test | Result / notes |
 | --- | --- | --- | --- |
-| Pending | Browser prototype | Source changes and manual smoke test | Not yet recorded |
+| 23 Oct 2026 | Chrome + `node server.js` :4173 | Home, Movies, Settings, Watch Preview, `GET /api/status` | UI same; status `bedrock:false` without `.env` |
 | Pending | Official Fire TV / Vega target | Package, launch, remote navigation, Back behavior, and performance | Not yet verified |
