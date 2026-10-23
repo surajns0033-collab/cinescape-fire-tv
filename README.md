@@ -7,7 +7,7 @@
 <p align="center">
   <img alt="License: MIT" src="https://img.shields.io/badge/license-MIT-111A30?style=flat&labelColor=0B1220&color=C8A46B">
   <img alt="Node.js 18+" src="https://img.shields.io/badge/node-%3E%3D18-111A30?style=flat&labelColor=0B1220&color=7EB8C9">
-  <img alt="Fire TV web" src="https://img.shields.io/badge/platform-Fire%20TV%20web-111A30?style=flat&labelColor=0B1220&color=C8A46B">
+  <img alt="Fire TV" src="https://img.shields.io/badge/platform-Fire%20TV-111A30?style=flat&labelColor=0B1220&color=C8A46B">
 </p>
 
 <p align="center">
